@@ -1,0 +1,83 @@
+.carousel-container {
+    width: 100%;
+    display: flex;
+
+}
+.carousel-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.carousel-content-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.carousel-content {
+    transition: all .6s linear;
+    display: flex;
+    height: 100%;
+    width: 200vw;
+    pointer-events: auto;
+    position: relative;
+}
+.carousel-content > * {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+.left-arrow, .right-arrow {
+    position: absolute;
+    z-index: 1050;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+}
+.navDots {
+    position: absolute;
+    z-index: 1050;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+
+}
+.navDots span{
+    width: 8px;
+    height: 8px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.LeftDot{
+    margin-right: 7px;
+}
+.LeftDot-active{
+    margin-right: 7px;
+    background-color: black;
+}
+.RightDot-active{
+    background-color: black;
+}
+.left-arrow {
+    left: 20px;
+    cursor: pointer;
+    transition: ease-out 0.4s;
+}
+.left-arrow:hover {
+    left: 10px;
+}
+.right-arrow {
+    right: 20px;
+    cursor: pointer;
+    transition: ease-in 0.4s;
+}
+.right-arrow:hover {
+    right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .name-of-arrow{
+        display: none;
+    }
+}

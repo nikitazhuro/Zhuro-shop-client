@@ -1,0 +1,35 @@
+h1{
+    font-size: 14px!important;
+}
+.ModalFilterActive_top_btn span{ 
+    cursor: pointer;
+}
+.ModalFilterActive_content{
+    padding: 20px 30px;
+}
+.ModalFilterActive_content label{
+    display: flex;
+    justify-content: space-between;
+}
+.Active{
+    font-weight: 700;
+}
+.Unactive{
+    font-weight: 400;
+}
+.sizeBlock {
+    margin: 20px 0;
+}
+.sizeBlock_content{
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: column
+}
+.colorBlock_content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.colorElem{
+    margin: 10px 0;
+}

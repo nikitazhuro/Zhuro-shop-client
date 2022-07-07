@@ -1,0 +1,85 @@
+.LeftBlock {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 10px;
+    height: 100%;
+}
+
+.carousel{
+    width: 80%;
+}
+.material_content{
+    width: 40%;
+}
+.LeftBlock span {
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0 5px;
+}
+h1{
+    font-size: 18px;
+}
+.RigthBlock_content_btns{
+    display: flex;
+    justify-content: space-between;
+}
+.RigthBlock_content button {
+    margin-top: 40px;
+    width: 200px;
+    text-align: center;
+    border: none;
+    padding: 8px 0;
+    color: white;
+    background-color: black;
+    transform: ease 1s all;
+}
+.RigthBlock_content{
+    width: 100%;
+}
+.RigthBlock_content button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.activeSizeSpan, .activeColorSpan{
+    text-decoration: underline;
+}
+.nav{
+    height: 85px;
+    z-Index:1049;
+    background: none;
+    padding-top : 10px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+    .carousel{
+        width: 100%;
+    }
+    .material_content{
+        width: 60%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .material_content{
+        display: none;
+    }
+    .LeftBlock{
+        width: 60vw;
+        margin-top: 10px;
+    }
+    .RigthBlock_content_btns{
+        justify-content: flex-start;
+    }
+
+}
+@media screen and (max-width: 576px) {
+
+    .LeftBlock{
+        width: 96.5vw;
+        margin-top: 10px;
+    }
+}

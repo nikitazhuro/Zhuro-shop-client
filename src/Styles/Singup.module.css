@@ -1,0 +1,49 @@
+.SingupForm{
+    max-width: 850px;
+    display: table-caption;
+}
+.SingupForm input{
+    min-width: 350px;
+    border: none;
+    border-bottom: 1px black solid;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+.Singup button{
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    border: none;
+    padding: 8px 0;
+    color: white;
+    background-color: black;
+    transform: ease 1s all;
+}
+.Singup button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.SingupFormCheckbox {
+    display: grid;
+}
+.SingupFormCheckbox label {
+   display: flex;
+   align-items: center;
+}
+.SingupFormCheckbox span {
+    font-size: 12px;
+    margin-left: 10px;
+}
+.password{
+    color: red;
+    font-size: 14px;
+}
+.nav{
+    height: 100px;
+    z-Index:1049;
+    background: none;
+    padding-top : 10px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

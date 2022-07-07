@@ -1,0 +1,41 @@
+.addAndRemoveCategories {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.addAndRemoveCategories span{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.createGoodWindow{
+    margin-right: 25px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.addAndRemoveCategories input {
+    height: 100%;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+.addAndRemoveCategories select {
+    height: 100%;
+    margin-right: 20px;
+}
+.addAndRemoveCategories_block{
+    display: flex;
+    align-items: flex-end;
+}
+.rightBlock_p {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav{
+    height: 100px;
+    z-Index:1049;
+    background: none;
+    padding-top : 10px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

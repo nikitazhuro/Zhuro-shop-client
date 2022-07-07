@@ -1,0 +1,32 @@
+.ModalFilter{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    z-index: 1049;
+}
+
+.ModalFilter.Active{
+    display: flex;  
+}
+@keyframes transform {
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.ModalFilter_Content{
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    min-width: 320px;
+    position: fixed;
+    top: 0;right: 0;bottom: 0;
+    transition: linear .15s ease-in;
+    animation: transform 1s linear infinite;  
+}

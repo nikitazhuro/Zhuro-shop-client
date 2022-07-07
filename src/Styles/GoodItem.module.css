@@ -1,0 +1,22 @@
+.GoodItem {
+    width: 23%;
+    margin: 10px;
+}
+.GoodItem_img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+.discription{
+    font-size: 60%;
+    width: 100%;
+}
+.discription span {
+    cursor: pointer;
+
+}
+.discription span:hover{
+    text-decoration: underline;
+}

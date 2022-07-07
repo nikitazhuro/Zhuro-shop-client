@@ -1,0 +1,77 @@
+.LogonForm{
+    max-width: 300px;
+}
+.LogonForm input{
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px black solid;
+    min-width: 300px;
+    font-size: 16px;
+}
+.LogonForm button {
+    margin-top: 40px;
+    width: 300px;
+    text-align: center;
+    border: none;
+    padding: 8px 0;
+    color: white;
+    background-color: black;
+    transform: ease 1s all;
+}
+.LogonForm button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.LogonForm h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.LogonForm a {
+    text-decoration: none;
+    color: black;
+}
+.LogonForm p {
+    font-size: 10px;
+    width: 300px;
+    margin-bottom: 21.5px;
+}
+.password{
+    color: red;
+    font-size: 14px;
+}
+.forgetPass:hover{
+    text-decoration: underline;
+}
+.mainRow{
+    padding: 200px 0;
+}
+.nav{
+    height: 100px;
+    z-Index:1049;
+    background: none;
+    padding-top : 10px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 992px) {
+    .mainRow{
+        display: block;
+    }
+    .LogonForm{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainRow{
+        display: flex;
+    }
+    .mainCol{
+        display: flex;
+        justify-content: center;
+    }
+}

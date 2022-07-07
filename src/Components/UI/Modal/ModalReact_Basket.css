@@ -1,0 +1,36 @@
+.ModalReact_Basket .modal-content{
+    max-width: 240px;
+    font-size: 18px;
+    margin: inherit;
+}
+.modal-backdrop{
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+.ModalReact_Basket.modal-header{
+    border: none;
+    display: block;
+    
+}
+.cross_img {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+.ModalReact_Basket.modal.fade .modal-dialog {
+    transition: transform .3s ease-out;
+    transform: translate(-50px, 0);
+}
+.ModalReact_Basket.modal.show .modal-dialog {
+    transform: none;
+}
+.ModalReact_Basket .me-2{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .ModalReact_Basket .modal-content{
+        max-width: 100%;
+    }
+}

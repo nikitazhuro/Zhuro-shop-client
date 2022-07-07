@@ -1,0 +1,63 @@
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    height: 100%;
+    position: relative;
+}
+.NavBar_imgs{
+    display: flex;
+    align-items: start;
+    cursor: pointer;
+}
+.NavBar_search{
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+    margin-right: 5%;
+    font-weight: 600;
+}
+.NavBar_search a{
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.NavBar_search span{
+    border-bottom: 1px solid black;
+    margin-right: 25px;
+}
+.NavBar_search button {
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.admin{
+    margin-right: 25px;
+    cursor: pointer;
+}
+@media screen and (max-width: 690px) {
+    .NavBar_search{
+        display: flex;
+        align-items: baseline;
+        font-size: 12px;
+        margin-right: 5%;
+        font-weight: 600;
+    }
+    .NavBar_search button{
+        display: none;
+    }
+    .admin{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .NavBar_search{
+        margin-right: 0;
+    }
+}

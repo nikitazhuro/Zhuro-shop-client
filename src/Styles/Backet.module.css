@@ -1,0 +1,68 @@
+.title_basket{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.title_basket h1{
+    font-size: 28px;
+}
+.payList {
+    width: 100%;
+}
+.goodsAndDelivery{
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+.goodsAndDelivery_goods{
+    display: flex;
+    justify-content: space-between;
+}
+.goodsAndDelivery_delivery{
+    display: flex;
+    justify-content: space-between;
+}
+.totalCostBlock {
+    padding-top: 36px;
+}
+.totalCost{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.totalCost_btn button{
+    width: 100%;
+}
+.alt_title {
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    height: 100px;
+    z-Index:1049;
+    background: none;
+    padding-top : 10px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+}
+.nav:hover{
+    background: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainRow{
+        display: block;
+    }
+    .goodsList{
+        width: 100%;
+    }
+    .payList{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+}

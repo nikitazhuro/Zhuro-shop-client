@@ -1,0 +1,36 @@
+.createGoodMenu_header {
+    display: flex;
+    justify-content: space-between;
+}
+.createGoodMenu_body {
+    max-width: 500px;
+    display: flex;
+}
+.createGoodMenu_body input {
+    width: 100%;
+    margin: 10px 0px;
+}
+.createGoodMenu_body_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.createGoodMenu_body button, .createGoodMenu_footer button {
+    margin: 0;
+    background: black;
+    color: white;
+}
+.createGoodMenu_footer{
+    display: flex;
+    justify-content: flex-end;
+}
+.createGoodMenu_body select {
+    margin: 10px 0px;
+}
+.showCategories {
+    display: flex;
+    justify-content: space-between;
+}
+.showCategories span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.MyButton {
+    margin-top: 40px;
+    width: 200px;
+    text-align: center;
+    border: none;
+    padding: 8px 0;
+    color: white;
+    background-color: black;
+    transform: ease 1s all;
+}
+.MyButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

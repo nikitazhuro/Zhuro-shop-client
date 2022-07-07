@@ -1,0 +1,88 @@
+.Goods_input{
+    display: flex;
+}
+.Goods_input div{
+    border-bottom: black 2px solid;
+    display: flex;
+    align-items: flex-end;
+}
+.Goods_input input{
+    border: none;
+    border-bottom: black 2px solid;
+    width: 100%;
+    font-size: 28px;
+}
+.Filter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.Filter ul{
+    display: flex;
+    margin: 0;
+}
+.Filter li{
+    list-style: none;
+    margin-right: 10px;
+}
+.Goods_trends{
+    font-size: 6px;
+    text-transform: uppercase;
+}
+.Goods_trends ul{
+    padding: 0;
+}
+.Goods_trends li {
+    list-style: none;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+}
+.nothing{
+    display: flex;
+    justify-content: center;
+}
+.cross{
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+.nav{
+    height: 85px;
+    z-Index:1049;
+    background: white;
+    padding-top : 10px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.widthGoodItem{
+    width: 16%;
+    margin: 0 10px 10px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .widthGoodItem{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .widthGoodItem{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .searchResult{
+        display: none;
+    }
+    .sexFilter{
+        padding: 0;
+    }
+}

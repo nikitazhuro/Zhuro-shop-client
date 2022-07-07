@@ -1,0 +1,7 @@
+.MyInput{
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Arial', Sans-Serif;
+    border-bottom: black 1px solid;
+    outline:none;
+}

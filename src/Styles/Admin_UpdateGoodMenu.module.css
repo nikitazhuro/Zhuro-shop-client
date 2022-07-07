@@ -1,0 +1,85 @@
+.UpdateGoodMenu_header {
+    display: flex;
+    justify-content: space-between;
+}
+.UpdateGoodMenu {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 80%;
+}
+.UpdateGoodMenu_body input {
+    width: 100%;
+    margin: 10px 0px;
+}
+.table1{
+    border: 2px solid black;
+    padding: 15px;
+    margin-right:10px
+}
+.table2{
+    border: 2px solid black;
+    padding: 15px;
+    margin-left: 10px;
+}
+.UpdateGoodMenu_body {
+    display: flex;
+}
+.UpdateGoodMenu_body_block1, .UpdateGoodMenu_body_block2 {
+    display: block;
+    width: 40%;
+}
+.UpdateGoodMenu_body_block1 span, .UpdateGoodMenu_body_block2 span {
+    margin-bottom: 20px;
+}
+.span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.UpdateGoodMenu_body_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.UpdateGoodMenu_body button, .UpdateGoodMenu_footer button {
+    margin: 0;
+    background: black;
+    font-size: 14px;
+    color: white;
+}
+.UpdateGoodMenu_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.UpdateGoodMenu_footer_removeOne:hover{
+    text-decoration: underline;
+}
+.UpdateGoodMenu_body select {
+    margin: 10px 0px;
+}
+.createGoodMenu_body_buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.UpdateGoodMenu_footer_sendBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+@media screen and (max-width: 992px) {
+    .UpdateGoodMenu_body {
+        display: block;
+    }
+    .UpdateGoodMenu_body_block1, .UpdateGoodMenu_body_block2 {
+        width: 80%;
+    }
+    .table1, .table2{
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .UpdateGoodMenu_footer{
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
