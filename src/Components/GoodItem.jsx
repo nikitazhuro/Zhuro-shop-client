@@ -16,7 +16,7 @@ function GoodItem({ ...props }) {
         <div>
           <img
             className={classes.GoodItem_img}
-            src={`http://localhost:5000/${props.good.img[0][0]}`}
+            src={`https://zhuro-shop-server.herokuapp.com/${props.good.img[0][0]}`}
             alt="img"
           />
         </div>

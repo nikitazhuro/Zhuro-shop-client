@@ -95,7 +95,7 @@ const GoodItemPage = observer(() => {
                   <Carousel.Item key={img}>
                     <img
                       className="d-block w-100"
-                      src={`http://localhost:5000/${img}`}
+                      src={`https://zhuro-shop-server.herokuapp.com/${img}`}
                       alt={img}
                     />
                   </Carousel.Item>

@@ -29,7 +29,7 @@ const BasketGoodElem = observer(({
         className={classes.img}
         onClick={() => router(`/Goods/${good._id}`)}
       >
-        <img src={`http://localhost:5000/${good.img[good.colors.indexOf(color)][0]}`} alt="img" />
+        <img src={`https://zhuro-shop-server.herokuapp.com/${good.img[good.colors.indexOf(color)][0]}`} alt="img" />
       </div>
       <div className={classes.discription}>
         <h1
