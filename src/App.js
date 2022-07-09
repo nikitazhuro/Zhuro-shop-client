@@ -26,12 +26,13 @@ const App = observer(() => {
       const token = localStorage.getItem('accessToken');
       const data = decodeToken(token);
       user.setUser(data);
-      console.log(user.user.role);
     }).finally(() => setIsLoading(false));
   }, []);
   if (isLoading) {
     return (
-      <Spinner animation="grow" />
+      <div className="Spinner">
+        <Spinner animation="grow" />
+      </div>
     );
   }
 

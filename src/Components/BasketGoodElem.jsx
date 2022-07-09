@@ -20,6 +20,7 @@ const BasketGoodElem = observer(({
 
   const remove = async () => {
     await removeFromBasket(id, number);
+    window.location.reload();
   };
 
   return (

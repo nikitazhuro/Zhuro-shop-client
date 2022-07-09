@@ -4,15 +4,17 @@ import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
+
+import classes from '../Styles/Backet.module.css';
+
 import Footer from '../Components/Footer';
 import AfterFooterLang from '../Components/AfterFooterLang';
 import NavBar from '../Components/UI/NavBar/NavBar';
-import classes from '../Styles/Backet.module.css';
-
-import { basket } from '../http/userApi';
+import MyButton from '../Components/UI/Button/MyButton';
 import BasketGoodElem from '../Components/BasketGoodElem';
 import { getOneGood } from '../http/goodApi';
-import MyButton from '../Components/UI/Button/MyButton';
+
+import { basket } from '../http/userApi';
 
 const Backet = observer(() => {
   const { id } = useParams();
@@ -21,10 +23,16 @@ const Backet = observer(() => {
     activeColors: [],
     activePrices: [],
     activeSizes: [],
-
   });
-
   const [isLoading, setIsLoading] = useState(true);
+
+  const removeFromBtn = (uuid) => {
+    setBasketGoods({
+      ...basketGoods,
+      goods: [...basketGoods.goods.filter((e) => e._id !== uuid)],
+    });
+  };
+
   useEffect(async () => {
     await basket(id).then(async (basketData) => {
       const dataArr = [];
@@ -48,6 +56,7 @@ const Backet = observer(() => {
       });
     }).finally(() => setIsLoading(false));
   }, []);
+
   if (isLoading) {
     return <NavBar className={classes.nav} />;
   }
@@ -68,9 +77,10 @@ const Backet = observer(() => {
               <Col className={classes.goodsList} md={9}>
                 {basketGoods.goods.map((good, index) => (
                   <BasketGoodElem
-                    key={good._id}
+                    key={good._id + Math.random()}
                     number={index}
                     good={good}
+                    removeFromBtn={removeFromBtn}
                     price={basketGoods.activePrices[basketGoods.goods.indexOf(good)]}
                     size={basketGoods.activeSizes[basketGoods.goods.indexOf(good)]}
                     color={basketGoods.activeColors[basketGoods.goods.indexOf(good)]}

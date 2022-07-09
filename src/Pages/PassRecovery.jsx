@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { observer } from 'mobx-react';
+
+import classes from '../Styles/Logon.module.css';
+
 import AfterFooterLang from '../Components/AfterFooterLang';
 import Footer from '../Components/Footer';
 import NavBar from '../Components/UI/NavBar/NavBar';
-import classes from '../Styles/Logon.module.css';
 import MyInput from '../Components/UI/Input/MyInput';
+
 import { passRecovery } from '../http/userApi';
 
 const PassRecovery = observer(() => {

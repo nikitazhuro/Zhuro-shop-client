@@ -67,7 +67,7 @@ const GoodsCategoryPage = observer(() => {
                     type="button"
                     style={{ padding: '0 25%' }}
                     onClick={() => {
-                      setCurrentNumber(2.75);
+                      setCurrentNumber('calc(3vw - 4px)');
                       setLimit(6);
                       goods.setPage(1);
                       goods.setGoodsCategoryPageReplace([]);
@@ -77,14 +77,14 @@ const GoodsCategoryPage = observer(() => {
                     type="button"
                     style={{ paddingLeft: '25%' }}
                     onClick={() => {
-                      setCurrentNumber(5.5);
+                      setCurrentNumber('calc(6vw - 8px)');
                       setLimit(8);
                       goods.setPage(1);
                       goods.setGoodsCategoryPageReplace([]);
                     }}
                   />
                 </div>
-                <span style={{ transform: `translateX(${currentNumber}vw)` }} className={classes.ball} />
+                <span style={{ transform: `translateX(${currentNumber})` }} className={classes.ball} />
               </div>
             </div>
           </NavBar>
