@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Pet-project on React - Zhuro shop.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Technologies:
 
-In the project directory, you can run:
+### Frontend:
 
-### `npm start`
++ react, react-dom, react-router-dom, react-transition-group,
++ mobx,
++ axios,
++ linter - eslint.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Client part was deployed on firebase.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Project link - [https://zhuro-shop-client.web.app/](https://zhuro-shop-client.web.app/).
 
-### `npm test`
+### Backend (node.js):
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
++ express,
++ jsonwebtoken,
++ bcrypt, cookie-parser, uuid, nodemailer.
 
-### `npm run build`
+Server part was deployed on heroku.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Project link - [https://zhuro-shop-client.web.app/](https://zhuro-shop-client.web.app/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Project description: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ecommerce store. Design based on zara.com.
 
-### `npm run eject`
+On the server side, jwt authorization is implemented, email verification is used, passwords pass through the functions available with the bcrypt library. MongoDB is used as the database.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The client part consists of several pages, which you can see further in the screenshots. Separate interfaces for project management are also available for the admin. Mobx is used as the state-manager. Implemented infinite scrolling on the category page using react-transition-group. There is authorization, search, filtering, a list of categories, adding and removing products from the basket.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Main page:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://user-images.githubusercontent.com/84069087/178158910-b24585b3-57d9-46ae-8832-89df78b6067c.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Search page:
 
-## Learn More
+![image](https://user-images.githubusercontent.com/84069087/178159115-1b1f1b80-655f-45d2-be41-fed0ddc28639.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Caregory page:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://user-images.githubusercontent.com/84069087/178159006-e9536158-ff6e-4e8c-b8d6-7ffa5637f55a.png)
 
-### Code Splitting
+Good page:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://user-images.githubusercontent.com/84069087/178159160-bb290a1c-79ad-4120-8b4f-fae470631f00.png)
 
-### Analyzing the Bundle Size
+Basket page:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![image](https://user-images.githubusercontent.com/84069087/178159085-2b93f049-d90a-44dd-bc69-53afa93b3915.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The following interfaces are also available for the admin: ability to add and remove categories, ability to add new products, ability to change existing products and add new colors.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![image](https://user-images.githubusercontent.com/84069087/178159320-5d116d95-2d58-4546-8f1a-618acb2738c9.png)
+![image](https://user-images.githubusercontent.com/84069087/178159326-a4b6c1ff-2593-49be-ae2c-771447f2ca78.png)
+![image](https://user-images.githubusercontent.com/84069087/178159341-cb463ad3-2ae6-425e-8584-f8e8702b70c0.png)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## How to start:
 
-### `npm run build` fails to minify
+1. Clone server and client repositories,
+2. Install all dependencies in server and client directories with: `npm i`,
+3. To start server you must create .env file and put next parameters:
+   - PORT,
+   - MongoDB connetrion url,
+   - Server url,
+   - Client url,
+   - Jwt_access_secret_phrase,
+   - Jwt_refresh_secret_phrase,
+   - Mail_host,
+   - Mail_PORT,
+   - User_mail_login,
+   - User_mail_password.
+4. Run `npm start`,
+5. To start client you should run `npm run build` and then `npm start`,
+6. Run `http://localhost:8080` in browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+So, you can try to test it here: [https://zhuro-shop-client.web.app/](https://zhuro-shop-client.web.app/).
+
+Use GitHub only for code review.
+
+## Data for authorization:
+
+**You can use admin account to view all the functionality**.
+
+login: `admin`,\
+password: `admin`.
+
+**If you would like to create a new account, please put your existing email because site use email verification**.
+
+## Demonstration: 
+
+https://user-images.githubusercontent.com/84069087/178161717-abf95d30-433b-4984-8409-cfbf7f1253ec.mp4
